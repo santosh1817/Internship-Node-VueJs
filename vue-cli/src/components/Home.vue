@@ -1,8 +1,10 @@
 import router from './router'
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
-      <router-link class="navbar-brand" to="/">Home</router-link>
+    <nav class="navbar navbar-expand-lg navbar navbar-light bg-primary">
+      <router-link class="navbar-brand" to="/">
+      <img src="../assets/logo.png" width="30" height="30" alt="">
+      </router-link>
       <button
         class="navbar-toggler"
         type="button"
@@ -16,14 +18,9 @@ import router from './router'
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto">
+          
           <li class="nav-item active">
-            <router-link class="nav-link" to="/blog">Blog</router-link>
-          </li>
-          <li class="nav-item active">
-            <router-link class="nav-link" to="/services">Services</router-link>
-          </li>
-          <li class="nav-item active">
-            <router-link class="nav-link" to="/contact">Contact</router-link>
+            <router-link class="nav-link" to="/about">About</router-link>
           </li>
           <li class="nav-item active">
             <router-link class="nav-link" to="/users">Users</router-link>
@@ -33,7 +30,7 @@ import router from './router'
     </nav>
   <div class="jumbotron">
   <h1 class="display-4">Hello, world!</h1>
-  <p class="lead">This is a simple contact manager app, built using MEVN stack </p>
+  <p class="lead">This is a simple Users manager app, built using MEVN stack </p>
   <hr class="my-4">
   <p></p>
   </div>
