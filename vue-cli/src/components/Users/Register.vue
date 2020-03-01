@@ -87,7 +87,6 @@ export default {
     },
     message: ''
   }),
-  savingSuccessful: false,
   methods: {
     addItem() {
       axios
@@ -100,9 +99,9 @@ export default {
               () => (this.message = 'User created successfully'),
               1000
             );
-          setTimeout(() => (this.message = ''), 2000);
+          setTimeout(() => (this.message = ''), 1000);
           console.log(response);
-          setTimeout(() => this.$router.push('/users'), 2000);
+          setTimeout(() => this.$router.push('/users'), 1000);
         })
         .catch(err => {
           console.log(err);
